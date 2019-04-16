@@ -1,0 +1,64 @@
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: "Raleway", "Arial", sans-serif;
+	font-size:  19px;
+	font-weight: 100;
+	line-height: 22px;
+	color: #ffffff;
+
+	background-color: #191e3f;
+	background-image: url("../img/mountains_header.png"), url("../img/projects_background.png");
+	background-size: 100%, 100%;
+	background-position: center top, center bottom;
+	background-repeat: no-repeat, no-repeat;
+}
+.slogan {
+	font-size: 77px;
+	line-height: 89px;
+	letter-spacing: -1.56px;
+	text-align: center;
+}
+.index-content h2 {
+	font-size: 34px;
+}
+.mission-description p {
+	line-height: normal;
+}
+.projects {
+	background-image: url("../projects background.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center 0;
+}
+.persone-name {
+	font-size: 38px;
+	line-height: normal;
+}
+.persone-description p {
+	font-size: 15px;
+	line-height: normal;
+}
+.persone-profession {
+	line-height: normal;
+}
+.event-phrase {
+	font-size: 72px;
+	line-height: 83px;
+}
+.event-description p {
+	line-height: normal;
+}
+.footer-nav-list {
+	list-style: none;
+}
+.footer-nav-item a {
+	font-size: 15px;
+	line-height: 36px;
+	color: #ffffff;
+}
+.copyright {
+	font-size: 15px;
+	line-height: 36px;
+}
