@@ -1,3 +1,12 @@
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+html {
+	box-sizing: border-box;
+}
+.content-box-component {
+	box-sizing: content-box;
+}
 body {
 	margin: 0;
 	padding: 0;
@@ -14,23 +23,107 @@ body {
 	background-position: center top, center bottom;
 	background-repeat: no-repeat, no-repeat;
 }
+.container {
+	width: 1920px;
+	margin: 0 auto;
+}
+.visually-hidden {
+	display: none;
+}
+.main-head {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 230px;
+	padding-top: 80px;
+	padding-bottom: 365px;
+}
+.nav-wrapper {
+	display: flex;
+	margin-bottom: 325px;
+}
+.header-navigation {
+	width: 50px;
+	height: 50px;
+
+	background-color: #ffffff;
+}
 .slogan {
 	font-size: 77px;
+	font-weight: 100;
 	line-height: 89px;
 	letter-spacing: -1.56px;
 	text-align: center;
 }
+.mission {
+	display: flex;
+	position: relative;
+
+	padding: 30px 375px 330px 375px;
+}
+
 .index-content h2 {
 	font-size: 34px;
+}
+.mission-description {
+	position: absolute;
+	top: 30%;
+	right: 30%;
+
+	width: 500px;
 }
 .mission-description p {
 	line-height: normal;
 }
 .projects {
-	background-image: url("../projects background.png");
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	
+	margin-bottom: 250px;
+	padding: 35px 475px 510px 375px;
+
+	background-image: url("../img/projects_background.png");
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: center 0;
+}
+.projects-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	
+	width: 900px;
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+.team {
+	position: relative;
+
+	padding: 53px 375px 200px 375px;
+}
+.team-title {
+	position: absolute;
+}
+.team-list {
+	display: flex;
+	flex-wrap: wrap;
+
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+.team-item:first-child {
+	width: 1170px;
+}
+.team-item:nth-child(2n) {
+	width: 654px;
+}
+.team-item:nth-child(2n+1):not(:first-child) {
+	width: 516px;
 }
 .persone-name {
 	font-size: 38px;
@@ -43,14 +136,39 @@ body {
 .persone-profession {
 	line-height: normal;
 }
+.event {
+	display: flex;
+	flex-direction: column;
+
+	padding: 0 375px 360px 445px;
+}
 .event-phrase {
+	width: 500px;
+
 	font-size: 72px;
 	line-height: 83px;
+}
+.event-description {
+	width: 500px;
 }
 .event-description p {
 	line-height: normal;
 }
+.main-footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	padding-left: 375px;
+	padding-right: 375px;
+	padding-bottom: 55px;
+}
 .footer-nav-list {
+	display: flex;
+	justify-content: space-around;
+
+	width: 370px;
+
 	list-style: none;
 }
 .footer-nav-item a {
